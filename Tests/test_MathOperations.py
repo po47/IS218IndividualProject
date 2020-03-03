@@ -35,7 +35,3 @@ class MyTestCase(unittest.TestCase):
 
     def test_MathOperations_logarthim(self):
         self.assertEqual(0, Log.logarithm(10,1))
-
-
-if __name__ == '__main__':
-

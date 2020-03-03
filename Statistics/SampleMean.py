@@ -1,9 +1,12 @@
 from Calculator.Addition import addition
 from Calculator.Division import division
+from Statistics.Getsample import getSample
 
-def mean(data):
-    num_values = len(data)
+
+def sample_mean(data, sample_size):
     total = 0
-    from num in data:
+    sample = getSample(data, sample_size)
+    num_values = len(sample)
+    for num in sample:
         total = addition(total, num)
     return division(total, num_values)
